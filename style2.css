@@ -4,3 +4,10 @@ body{
     font-size: 14px;
     color: rgb(131, 127, 127);
     background: linear-gradient(to right, rgb(113, 113, 117), rgb(255, 255, 255), rgb(113, 113, 117));
+}
+img{
+    width: 11%;
+    height: 11%;
+    border-radius: 5px;;
+    padding: 10px 20px;
+}
