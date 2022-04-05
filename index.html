@@ -5,6 +5,17 @@
     <meta charset="UTF-8"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suitistes</title>
+    <script type="text/javascript">
+        function direCote() {
+          let cote = Math.round(Math.random()*100);
+          if (cote<50) {
+              result = cote+"  Malheureusement, vous ne pouvez pas rentrer dans notre grande famille!";
+          } else {
+                result = cote+"  Bravo, vous pouvez rentrer dans notre grande famille!";
+          }
+          alert("Résultat: "+ result)
+        }
+        </script>
 </head>
 <body>
         <h1>Les Suitistes</h1>
@@ -30,9 +41,9 @@
             <input type="text" name="Carte de Crédit" value=":)">
             <br>
             <br>
-            <a href="cote.html">
-                <input type="button" value="Calculer">
-            </a>
+            <form method="post">
+                <input type="button" value="Calculer" onclick="direCote()">
+            </form>
             </form>   
             </div>
             <img src="Remove background.png">
